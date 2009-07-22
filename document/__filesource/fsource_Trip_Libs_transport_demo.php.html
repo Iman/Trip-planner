@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for transport_demo.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file transport_demo.php</h1>
+<p>Documentation is available at <a href="../Trip/Libs/_transport_demo.php.html">transport_demo.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;An&nbsp;open&nbsp;source&nbsp;application&nbsp;development&nbsp;for&nbsp;PHP&nbsp;5.2.6&nbsp;or&nbsp;newer</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Trip&nbsp;sorter</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@subpackage</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Libs</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iman&nbsp;Samizadeh</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-tag">@e-Mail</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iman@imanpage.com</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;(c)&nbsp;2009.&nbsp;All&nbsp;Rights&nbsp;reserved</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;http://www.gnu.org/copyleft/gpl.html&nbsp;GNU/GPL,&nbsp;see&nbsp;LICENSE.php</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;version&nbsp;may&nbsp;have&nbsp;been&nbsp;modified&nbsp;pursuant</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License,&nbsp;and&nbsp;as&nbsp;distributed&nbsp;it&nbsp;includes&nbsp;or</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;derivative&nbsp;of&nbsp;works&nbsp;licensed&nbsp;under&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;or</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other&nbsp;free&nbsp;or&nbsp;open&nbsp;source&nbsp;software&nbsp;licenses.</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@since</span><span class="src-doc">&nbsp;Version&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-inc">require_once&nbsp;</span><span class="src-str">'helper/loader.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a22"></a>echo&nbsp;<span class="src-str">&quot;&lt;h1&gt;Create&nbsp;Transport&nbsp;::&nbsp;Class&nbsp;Demo&lt;/h1&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a24"></a>echo&nbsp;<span class="src-str">&quot;&lt;p&gt;Please&nbsp;read&nbsp;the&nbsp;source&nbsp;code.&lt;/p&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a25"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-var">$type&nbsp;</span>=&nbsp;<span class="src-str">'Air'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Train'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setTransportNumber&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-str">'FKg59'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setDestination&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-str">'London'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setCounter&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-str">'A78'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setGate&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-str">'32'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">setSeat&nbsp;</span><span class="src-sym">(&nbsp;</span><span class="src-str">'18A'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a34"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;Created&nbsp;transport&lt;/h2&gt;&lt;pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a35"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$transport&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Trip/Libs/Transport.html">Transport</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Transport.html#methodmakeTransportType">makeTransportType</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-var">$type&nbsp;</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">data&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a36"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-php">?&gt;</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 20 Jul 2009 00:17:25 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</body>
+</html>

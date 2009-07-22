@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>File Source for destination_demo.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>Source for file destination_demo.php</h1>
+<p>Documentation is available at <a href="../Trip/Libs/_destination_demo.php.html">destination_demo.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;An&nbsp;open&nbsp;source&nbsp;application&nbsp;development&nbsp;for&nbsp;PHP&nbsp;5.2.6&nbsp;or&nbsp;newer</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Trip&nbsp;sorter</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@subpackage</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Libs</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@author</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iman&nbsp;Samizadeh</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-tag">@e-Mail</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iman@imanpage.com</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@copyright</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;(c)&nbsp;2009.&nbsp;All&nbsp;Rights&nbsp;reserved</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@license</span><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;http://www.gnu.org/copyleft/gpl.html&nbsp;GNU/GPL,&nbsp;see&nbsp;LICENSE.php</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;version&nbsp;may&nbsp;have&nbsp;been&nbsp;modified&nbsp;pursuant</span></div></li>
+<li><div class="src-line"><a name="a13"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License,&nbsp;and&nbsp;as&nbsp;distributed&nbsp;it&nbsp;includes&nbsp;or</span></div></li>
+<li><div class="src-line"><a name="a14"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;derivative&nbsp;of&nbsp;works&nbsp;licensed&nbsp;under&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;or</span></div></li>
+<li><div class="src-line"><a name="a15"></a><span class="src-doc">&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other&nbsp;free&nbsp;or&nbsp;open&nbsp;source&nbsp;software&nbsp;licenses.</span></div></li>
+<li><div class="src-line"><a name="a16"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@since</span><span class="src-doc">&nbsp;Version&nbsp;1.0</span></div></li>
+<li><div class="src-line"><a name="a17"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a18"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a20"></a><span class="src-inc">require_once&nbsp;</span><span class="src-str">'helper/loader.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a22"></a>echo&nbsp;<span class="src-str">&quot;&lt;h1&gt;Create&nbsp;Destination&nbsp;::&nbsp;Class&nbsp;Demo&lt;/h1&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a23"></a>echo&nbsp;<span class="src-str">&quot;&lt;p&gt;</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;Steps&nbsp;are&nbsp;starting&nbsp;from&nbsp;&lt;b&gt;A&lt;/b&gt;&nbsp;to&nbsp;&lt;b&gt;L&lt;/b&gt;</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&nbsp;/&gt;</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;this&nbsp;demo&nbsp;start&nbsp;point&nbsp;sets&nbsp;to&nbsp;&lt;b&gt;B&lt;/b&gt;&nbsp;and&nbsp;end&nbsp;point&nbsp;&lt;b&gt;J&lt;/b&gt;&nbsp;and&nbsp;current&nbsp;location&nbsp;&lt;b&gt;D&lt;/b&gt;</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-str">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a28"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'A'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'B'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'C'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'D'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'E'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'F'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'J'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a36"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'K'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a37"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'L'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Info&nbsp;here'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a39"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodsetBegin">setBegin</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'B'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a40"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodsetCurrent">setCurrent</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'D'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a41"></a><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodsetEnd">setEnd</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'J'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a43"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;Current&nbsp;point:&lt;/h2&gt;&lt;pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a44"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodgetCurrent">getCurrent</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a45"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a47"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;Next&nbsp;point:&lt;/h2&gt;&lt;pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a48"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodgetNext">getNext</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a49"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a50"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a51"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;Previous&nbsp;point:&lt;/h2&gt;&lt;pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a52"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodgetPrev">getPrev</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a53"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a54"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a55"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;All&nbsp;next&nbsp;steps:&lt;/h2&gt;&lt;pre&gt;getAllNext&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a56"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodgetAllNext">getAllNext</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a57"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a59"></a>echo&nbsp;<span class="src-str">&quot;&lt;h2&gt;All&nbsp;Previous&nbsp;steps:&lt;/h2&gt;&lt;pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a60"></a><a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../Trip/Libs/Destination.html">Destination</a></span><span class="src-sym">::</span><a href="../Trip/Libs/Destination.html#methodgetAllPrev">getAllPrev</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a61"></a>echo&nbsp;<span class="src-str">&quot;&lt;/pre&gt;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a63"></a><span class="src-php">?&gt;</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 20 Jul 2009 00:17:20 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</body>
+</html>

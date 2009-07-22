@@ -1,0 +1,13 @@
+Trip Planner Is an API written in PHP5 for create and sort various transportations 
+and provide trip steps from a point A to point B via several stops on the way. The API 
+can handle the requests over start point, current step or end step also combinations of all.
+Each step can contain information about seat assignment, and means of transportation such as flight number, 
+bus number etc... 
+
+Installation:
+Just drag and drop it into your dev sandbox.
+
+Minimum requirement:
+PHP5
+
+Any question give me a shout: iman@imanpage.com 

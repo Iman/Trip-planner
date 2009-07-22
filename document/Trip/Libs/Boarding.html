@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Boarding</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Boarding</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boarding</p>
+<p class="description"><p>Boarding class.</p></p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> <p>AbstractBoarding</p><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-id">Example&nbsp;of&nbsp;</span>use:</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-id">ie</span>.&nbsp;<a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Start&nbsp;Point'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Description'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Type&nbsp;of&nbsp;Transport'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Destination'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Transport&nbsp;Number'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Seat'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Counter'</span><span class="src-sym">,&nbsp;&nbsp;</span><span class="src-str">'&nbsp;Gate'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Madrid'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Take&nbsp;train&nbsp;etc..'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Train'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Barcelona'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'78A'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'45B'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Gairport&nbsp;bus'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Take&nbsp;the&nbsp;airport&nbsp;bus&nbsp;etc...&nbsp;No&nbsp;seat&nbsp;assignment.'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Bus'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Gerona&nbsp;Airport'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'From&nbsp;Gerona&nbsp;Airport&nbsp;etc..'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Air'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Stockholm'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'SK455'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'3A'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'344'</span><span class="src-sym">,&nbsp;&nbsp;</span><span class="src-str">'&nbsp;45B'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Stockholm'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'From&nbsp;Stockholm&nbsp;etc..'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Air'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'New&nbsp;York&nbsp;JFK'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'SK22'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'7B'</span><span class="src-sym">,&nbsp;</span><span class="src-id">null</span><span class="src-sym">,&nbsp;&nbsp;</span><span class="src-str">'&nbsp;22'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodadd">add</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'arrived'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'You&nbsp;have&nbsp;arrived&nbsp;at&nbsp;your&nbsp;final&nbsp;destination.'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodsetBegin">setBegin</a><span class="src-sym">(</span><span class="src-str">'Gairport'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodsetCurrent">setCurrent</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-str">'Gerona'&nbsp;</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodsetEnd">setEnd</a><span class="src-sym">(</span><span class="src-str">'Stockton'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodgetCurrent">getCurrent</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodgetNext">getNext</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodgetPrev">getPrev</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodgetAllNext">getAllNext</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a>&nbsp;<span class="src-sym">(&nbsp;</span><span class="src-id"><a href="../../Trip/Libs/Boarding.html">Boarding</a></span><span class="src-sym">::</span><a href="../../Trip/Libs/Boarding.html#methodgetAllPrev">getAllPrev</a>&nbsp;<span class="src-sym">(</span><span class="src-sym">)&nbsp;)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_libs---Boarding.class.php.html">/libs/Boarding.class.php</a> (line <span class="field"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a228">228</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../Boarding/AbstractBoarding.html">AbstractBoarding</a>
+   |
+   --Boarding</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$count" title="details" class="var-name">$count</a>
+				</div>
+																<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$set" title="details" class="var-name">$set</a>
+				</div>
+																															</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																				
+												<div class="method-definition">
+											<span class="method-result">magic</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add" title="details" class="method-name">add</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$context</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$destination</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$transportNumber</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$seat</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$counter</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$gate</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllNext" title="details" class="method-name">getAllNext</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAllPrev" title="details" class="method-name">getAllPrev</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getCurrent" title="details" class="method-name">getCurrent</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getNext" title="details" class="method-name">getNext</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getPrev" title="details" class="method-name">getPrev</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBegin" title="details" class="method-name">setBegin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCurrent" title="details" class="method-name">setCurrent</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEnd" title="details" class="method-name">setEnd</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$count" id="$count"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$count</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a230">230</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$set" id="$set"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$set</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a231">231</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../Boarding/AbstractBoarding.html">AbstractBoarding</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Boarding/AbstractBoarding.html#var$context">AbstractBoarding::$context</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Boarding/AbstractBoarding.html#var$node">AbstractBoarding::$node</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Boarding/AbstractBoarding.html#var$transportType">AbstractBoarding::$transportType</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a242">242</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function construction</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> __construct</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">magic</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">0</span><span class="var-description">: clsss construction()</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd" id="add"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a267">267</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add</p>
+<p class="description"><p>Adding the boarding information including the location, location description, transport types, destination,  transport number, seat, gate, counter and gate information.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> add</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$context</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$destination</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$transportNumber</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$seat</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$counter</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$gate</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$node</span><span class="var-description">: Location</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$context</span><span class="var-description">: Context</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$type</span><span class="var-description">: TransportType</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$destination</span><span class="var-description">: Destination</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$transportNumber</span><span class="var-description">: TransportNumber</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$seat</span><span class="var-description">: Seat</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$counter</span><span class="var-description">: Counter</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$gate</span><span class="var-description">: Gate</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodadd">AbstractBoarding::add()</a></dt>
+						<dd>Add</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetAllNext" id="getAllNext"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllNext</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a369">369</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getAllNext</p>
+<p class="description"><p>Get all next steps and information before current location</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> getAllNext</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllNext
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodgetAllNext">AbstractBoarding::getAllNext()</a></dt>
+						<dd>getAllNext</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetAllPrev" id="getAllPrev"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllPrev</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a385">385</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getAllPrev</p>
+<p class="description"><p>Get all previous steps and information before current location</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> getAllPrev</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAllPrev
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodgetAllPrev">AbstractBoarding::getAllPrev()</a></dt>
+						<dd>getAllPrev</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetCurrent" id="getCurrent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCurrent</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a353">353</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getCurrent</p>
+<p class="description"><p>Get the current location</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> getCurrent</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getCurrent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodgetCurrent">AbstractBoarding::getCurrent()</a></dt>
+						<dd>getCurrent</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetNext" id="getNext"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNext</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a401">401</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getNext</p>
+<p class="description"><p>Get just the next step before current location</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> getNext</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getNext
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodgetNext">AbstractBoarding::getNext()</a></dt>
+						<dd>getNext</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetPrev" id="getPrev"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPrev</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a417">417</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">getPrev</p>
+<p class="description"><p>Get just the previous step before current location</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> getPrev</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getPrev
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodgetPrev">AbstractBoarding::getPrev()</a></dt>
+						<dd>getPrev</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetBegin" id="setBegin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBegin</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a302">302</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setBegin</p>
+<p class="description"><p>Set beginning point of the journey</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> setBegin</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBegin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$node</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodsetBegin">AbstractBoarding::setBegin()</a></dt>
+						<dd>setBegin</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetCurrent" id="setCurrent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCurrent</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a319">319</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setCurrent</p>
+<p class="description"><p>Set current point of the journey</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> setCurrent</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCurrent
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$node</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodsetCurrent">AbstractBoarding::setCurrent()</a></dt>
+						<dd>setCurrent</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetEnd" id="setEnd"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEnd</span> (line <span class="line-number"><a href="../../__filesource/fsource_Trip_Libs_libsBoarding.class.php.html#a336">336</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setEnd</p>
+<p class="description"><p>Set end point of the journey</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> setEnd</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEnd
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$node</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$node</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Boarding/AbstractBoarding.html#methodsetEnd">AbstractBoarding::setEnd()</a></dt>
+						<dd>setEnd</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../Boarding/AbstractBoarding.html">AbstractBoarding</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodadd">AbstractBoarding::add()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodgetAllNext">AbstractBoarding::getAllNext()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodgetAllPrev">AbstractBoarding::getAllPrev()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodgetCurrent">AbstractBoarding::getCurrent()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodgetNext">AbstractBoarding::getNext()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodgetPrev">AbstractBoarding::getPrev()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodsetBegin">AbstractBoarding::setBegin()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodsetCurrent">AbstractBoarding::setCurrent()</a></span><br>
+													<span class="method-name"><a href="../../Boarding/AbstractBoarding.html#methodsetEnd">AbstractBoarding::setEnd()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 20 Jul 2009 00:17:17 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.1</a>
+	</p>
+	</div></body>
+</html>
